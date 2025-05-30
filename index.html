@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/scrip/nine.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body>
+    <!-- namee statement or create account -->
+    <div id="pare">
+        <h2 id="user">Name: <input type="text" id="users" placeholder="Enter your Name" ></h2>
+        <button id="login">Send <i class="fa fa-clone" aria-hidden="true"></i></button>
+    </div>
+    <!-- login account process -->
+    <div id="pare1">
+        <h2 id="use">OldName: <input type="text" id="userss" placeholder="Enter your OldName" \></h2>
+        <button id="logins">Send <i class="fa fa-clone" aria-hidden="true"></i></button>
+        <button class="log" id="ReName" onclick="rename()">ReName<i class="fa fa-recycle" aria-hidden="true"></i></button>
+    </div>
+    <!-- main page notess  -->
+    <nav id="nav">
+        <div id="header">
+            <h1>Note Pade</h1>
+            <h2 id="Username" style="color: rgb(255, 0, 0);"> </h2>
+        </div>
+        <div id="bigContainer">
+            <!-- quit buttons -->
+            <button id="impo" onclick="Quit()" ><abbr title="Quit"><i class="fa fa-sign-in" aria-hidden="true"></i> </abbr> </button>
+            <!-- end quid button process -->
+
+            <div id="poup"></div>
+            <div id="Content">
+                <h2>Add Notes</h2>
+                <form>
+                    <input type="text" id="Heading" placeholder=" Name" required>
+                    <input type="text" id="Authors" placeholder=" Plane" required>
+                    <textarea name="" id="Comments" placeholder="Comments:-" required></textarea>
+                    <button id="Adding">Save <i class="fa fa-download" aria-hidden="true"></i></button>
+                    <button id="Cancle">Cancel <i class="fa fa-repeat" aria-hidden="true"></i></button>
+                </form>
+            </div>
+        </div>
+        <button id="btn" onclick="add()">+</button>
+        </div>
+    </nav>
+    <!-- quit conten shou pages -->
+    <div id="par">
+        <h1 style="color: white;" id="mys"> <i class="fa fa-question-circle" aria-hidden="true"></i>Are You sure Want
+            Quit</h1>
+        <button id="btn4" onclick="Yes()">&#10003 </button>
+        <button id="btn5" onclick="No()"> &#10060 </button>
+    </div>
+</body>
+
+</html>
+<script src="nine.js"></script>
