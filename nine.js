@@ -47,7 +47,7 @@ Adding.addEventListener('click', (event) => {
             <h3>${Authors.value}</h3>
             <p>${Comments.value}</p>
             <button id="btn1" onclick="Del(event)"> Remove <i class="fa fa-recycle" aria-hidden="true"></i></button>`;
-    if ('a' == Heading.value && 'a' == Authors.value && 'a' == Comments.value) {
+    if ('' != Heading.value && '' != Authors.value && '' != Comments.value) {
         bigContainer.append(div);
         Heading.value = '';
         Authors.value = '';
@@ -56,15 +56,10 @@ Adding.addEventListener('click', (event) => {
         poup.style.display = "none";
 
     }
-    else{
-         Content.style.display = "none";
-        poup.style.display = "none";
-
-    }
 })
-// window.onbeforeunload = function(){
-//     return "?";
-// }
+window.onbeforeunload = function(){
+    return "?";
+}
 let pare = document.getElementById('pare');
 let user = document.getElementById('users');
 let login = document.getElementById('login');
